@@ -1,0 +1,911 @@
+[
+  {
+    "id": "S001",
+    "category": "shared",
+    "shared_group": "Shared Group 1",
+    "group_prefix": "prefix A",
+    "template": "technical summarization",
+    "prompt_index_within_group": 1,
+    "prompt": "You are a technical summarization assistant. Read the material below and produce a concise, accurate summary for an engineering audience. Focus on the core mechanism, main claims, practical implications, and limitations. Keep the output structured with the headings: Overview, Key Points, Practical Impact, Limitations.\n\nMaterial:\nA research note describes a retrieval pipeline that adds a lightweight reranker after vector search. The baseline system retrieves 50 candidates with dense embeddings, then reranks the top 10 with a cross-encoder. The note reports higher precision at k, but also mentions that latency increases by 35 ms per query at the 95th percentile. The authors recommend caching popular queries and lowering the reranker depth during peak traffic."
+  },
+  {
+    "id": "S002",
+    "category": "shared",
+    "shared_group": "Shared Group 1",
+    "group_prefix": "prefix A",
+    "template": "technical summarization",
+    "prompt_index_within_group": 2,
+    "prompt": "You are a technical summarization assistant. Read the material below and produce a concise, accurate summary for an engineering audience. Focus on the core mechanism, main claims, practical implications, and limitations. Keep the output structured with the headings: Overview, Key Points, Practical Impact, Limitations.\n\nMaterial:\nAn internal design memo explains how gradient checkpointing reduces activation memory during transformer training. Instead of storing every intermediate tensor, the framework recomputes selected activations during backpropagation. The memo notes that this lowers peak memory substantially, but training time increases because additional forward passes are required. It also warns that the tradeoff depends on sequence length and model depth."
+  },
+  {
+    "id": "S003",
+    "category": "shared",
+    "shared_group": "Shared Group 1",
+    "group_prefix": "prefix A",
+    "template": "technical summarization",
+    "prompt_index_within_group": 3,
+    "prompt": "You are a technical summarization assistant. Read the material below and produce a concise, accurate summary for an engineering audience. Focus on the core mechanism, main claims, practical implications, and limitations. Keep the output structured with the headings: Overview, Key Points, Practical Impact, Limitations.\n\nMaterial:\nA benchmarking report compares FP32, FP16, and BF16 training on a 7B-parameter language model. FP16 provides strong throughput gains but occasionally shows numerical instability without dynamic loss scaling. BF16 is more stable and nearly as fast on supported hardware. The report concludes that BF16 is the preferred default when the accelerator supports it, especially for long runs with large batch sizes."
+  },
+  {
+    "id": "S004",
+    "category": "shared",
+    "shared_group": "Shared Group 1",
+    "group_prefix": "prefix A",
+    "template": "technical summarization",
+    "prompt_index_within_group": 4,
+    "prompt": "You are a technical summarization assistant. Read the material below and produce a concise, accurate summary for an engineering audience. Focus on the core mechanism, main claims, practical implications, and limitations. Keep the output structured with the headings: Overview, Key Points, Practical Impact, Limitations.\n\nMaterial:\nA short article outlines how speculative decoding can accelerate text generation. A smaller draft model proposes multiple candidate tokens, and a larger target model verifies them in parallel. When the draft predictions are accurate, overall decoding speed improves because the expensive model accepts several tokens at once. The article emphasizes that the speedup depends heavily on the alignment between the draft and target models."
+  },
+  {
+    "id": "S005",
+    "category": "shared",
+    "shared_group": "Shared Group 1",
+    "group_prefix": "prefix A",
+    "template": "technical summarization",
+    "prompt_index_within_group": 5,
+    "prompt": "You are a technical summarization assistant. Read the material below and produce a concise, accurate summary for an engineering audience. Focus on the core mechanism, main claims, practical implications, and limitations. Keep the output structured with the headings: Overview, Key Points, Practical Impact, Limitations.\n\nMaterial:\nA system note discusses why prefix caching helps repeated inference workloads. When many requests share the same prompt prefix, the model can reuse previously computed key-value states for that shared portion instead of recomputing them for every request. This reduces prefill cost and improves throughput. The note also mentions that benefits shrink when prompts are mostly unique or when cache eviction happens too often."
+  },
+  {
+    "id": "S006",
+    "category": "shared",
+    "shared_group": "Shared Group 1",
+    "group_prefix": "prefix A",
+    "template": "technical summarization",
+    "prompt_index_within_group": 6,
+    "prompt": "You are a technical summarization assistant. Read the material below and produce a concise, accurate summary for an engineering audience. Focus on the core mechanism, main claims, practical implications, and limitations. Keep the output structured with the headings: Overview, Key Points, Practical Impact, Limitations.\n\nMaterial:\nA tutorial explains tensor parallelism in large-model inference. Model weights for the same layer are split across multiple GPUs so the computation can run collaboratively. This allows a model too large for one GPU to fit across several devices, but introduces communication overhead between GPUs. The tutorial stresses that performance depends on both interconnect bandwidth and how balanced the partitioning is."
+  },
+  {
+    "id": "S007",
+    "category": "shared",
+    "shared_group": "Shared Group 1",
+    "group_prefix": "prefix A",
+    "template": "technical summarization",
+    "prompt_index_within_group": 7,
+    "prompt": "You are a technical summarization assistant. Read the material below and produce a concise, accurate summary for an engineering audience. Focus on the core mechanism, main claims, practical implications, and limitations. Keep the output structured with the headings: Overview, Key Points, Practical Impact, Limitations.\n\nMaterial:\nA blog post summarizes the difference between data parallelism and pipeline parallelism. Data parallelism replicates the model across devices and splits input batches, while pipeline parallelism splits model layers across devices and streams microbatches through them. Data parallelism is easier to implement, but pipeline parallelism can help when a model does not fit on a single accelerator. The post notes that pipeline bubbles can reduce efficiency."
+  },
+  {
+    "id": "S008",
+    "category": "shared",
+    "shared_group": "Shared Group 1",
+    "group_prefix": "prefix A",
+    "template": "technical summarization",
+    "prompt_index_within_group": 8,
+    "prompt": "You are a technical summarization assistant. Read the material below and produce a concise, accurate summary for an engineering audience. Focus on the core mechanism, main claims, practical implications, and limitations. Keep the output structured with the headings: Overview, Key Points, Practical Impact, Limitations.\n\nMaterial:\nA technical update describes a vector database index migration from exact search to approximate nearest neighbor search using HNSW. The migration lowers average query latency dramatically while preserving most of the retrieval quality. However, index construction time and memory usage both increase, and recall can degrade if parameters are not tuned carefully. The update recommends validating recall on representative queries before launch."
+  },
+  {
+    "id": "S009",
+    "category": "shared",
+    "shared_group": "Shared Group 1",
+    "group_prefix": "prefix A",
+    "template": "technical summarization",
+    "prompt_index_within_group": 9,
+    "prompt": "You are a technical summarization assistant. Read the material below and produce a concise, accurate summary for an engineering audience. Focus on the core mechanism, main claims, practical implications, and limitations. Keep the output structured with the headings: Overview, Key Points, Practical Impact, Limitations.\n\nMaterial:\nA paper summary explains how LoRA fine-tuning adapts large language models efficiently. Instead of updating all model weights, LoRA injects low-rank trainable matrices into selected layers and keeps the base weights frozen. This reduces trainable parameter count and memory footprint while preserving much of the task performance. The summary also notes that rank selection and target-module choice strongly affect results."
+  },
+  {
+    "id": "S010",
+    "category": "shared",
+    "shared_group": "Shared Group 1",
+    "group_prefix": "prefix A",
+    "template": "technical summarization",
+    "prompt_index_within_group": 10,
+    "prompt": "You are a technical summarization assistant. Read the material below and produce a concise, accurate summary for an engineering audience. Focus on the core mechanism, main claims, practical implications, and limitations. Keep the output structured with the headings: Overview, Key Points, Practical Impact, Limitations.\n\nMaterial:\nAn infrastructure review analyzes a production outage caused by a thundering herd on a shared feature store. Multiple services retried failed reads at the same time, causing cascading load and increased tail latency. Temporary mitigation included exponential backoff and stricter request budgets. The review recommends jittered retries, circuit breakers, and proactive load shedding to prevent recurrence."
+  },
+  {
+    "id": "S011",
+    "category": "shared",
+    "shared_group": "Shared Group 2",
+    "group_prefix": "prefix B",
+    "template": "structured QA",
+    "prompt_index_within_group": 1,
+    "prompt": "You are a structured question-answering assistant. Read the context and answer the question using only the provided information. Format the response exactly as:\nAnswer: <direct answer>\nEvidence: <2-4 concise bullet-style facts in one paragraph>\nConfidence: <High/Medium/Low>\n\nContext:\nThe release checklist states that version 2.4 ships on May 18 if regression testing passes by May 14. A fallback plan delays launch by one week if payment webhook failures exceed 0.5% in staging.\n\nQuestion:\nUnder what condition will version 2.4 be delayed?"
+  },
+  {
+    "id": "S012",
+    "category": "shared",
+    "shared_group": "Shared Group 2",
+    "group_prefix": "prefix B",
+    "template": "structured QA",
+    "prompt_index_within_group": 2,
+    "prompt": "You are a structured question-answering assistant. Read the context and answer the question using only the provided information. Format the response exactly as:\nAnswer: <direct answer>\nEvidence: <2-4 concise bullet-style facts in one paragraph>\nConfidence: <High/Medium/Low>\n\nContext:\nThe onboarding guide says contractors receive repository access on day 1, but production database access requires manager approval and security training completion. Security training is scheduled every Tuesday and Thursday.\n\nQuestion:\nWhat must happen before a contractor gets production database access?"
+  },
+  {
+    "id": "S013",
+    "category": "shared",
+    "shared_group": "Shared Group 2",
+    "group_prefix": "prefix B",
+    "template": "structured QA",
+    "prompt_index_within_group": 3,
+    "prompt": "You are a structured question-answering assistant. Read the context and answer the question using only the provided information. Format the response exactly as:\nAnswer: <direct answer>\nEvidence: <2-4 concise bullet-style facts in one paragraph>\nConfidence: <High/Medium/Low>\n\nContext:\nA service-level document says the search API target is 99.9% monthly availability. It also states that scheduled maintenance windows do not count toward unplanned downtime if announced 72 hours in advance.\n\nQuestion:\nDo announced maintenance windows count against the 99.9% target?"
+  },
+  {
+    "id": "S014",
+    "category": "shared",
+    "shared_group": "Shared Group 2",
+    "group_prefix": "prefix B",
+    "template": "structured QA",
+    "prompt_index_within_group": 4,
+    "prompt": "You are a structured question-answering assistant. Read the context and answer the question using only the provided information. Format the response exactly as:\nAnswer: <direct answer>\nEvidence: <2-4 concise bullet-style facts in one paragraph>\nConfidence: <High/Medium/Low>\n\nContext:\nThe experiment log reports that Model X achieved 84% accuracy with 120 ms latency, while Model Y achieved 82% accuracy with 75 ms latency. The product requirement caps latency at 90 ms.\n\nQuestion:\nWhich model satisfies the latency requirement, and what accuracy does it have?"
+  },
+  {
+    "id": "S015",
+    "category": "shared",
+    "shared_group": "Shared Group 2",
+    "group_prefix": "prefix B",
+    "template": "structured QA",
+    "prompt_index_within_group": 5,
+    "prompt": "You are a structured question-answering assistant. Read the context and answer the question using only the provided information. Format the response exactly as:\nAnswer: <direct answer>\nEvidence: <2-4 concise bullet-style facts in one paragraph>\nConfidence: <High/Medium/Low>\n\nContext:\nA deployment note explains that canary rollout begins with 5% traffic for 30 minutes, increases to 25% if error rate stays below 1%, and then reaches 100% after one hour of stable performance.\n\nQuestion:\nWhat error-rate condition must be met to move from 5% to 25% traffic?"
+  },
+  {
+    "id": "S016",
+    "category": "shared",
+    "shared_group": "Shared Group 2",
+    "group_prefix": "prefix B",
+    "template": "structured QA",
+    "prompt_index_within_group": 6,
+    "prompt": "You are a structured question-answering assistant. Read the context and answer the question using only the provided information. Format the response exactly as:\nAnswer: <direct answer>\nEvidence: <2-4 concise bullet-style facts in one paragraph>\nConfidence: <High/Medium/Low>\n\nContext:\nThe dataset card says training data includes English and Spanish support tickets collected from 2022 to 2024. It excludes tickets marked as legal escalation or containing payment card numbers.\n\nQuestion:\nWhich kinds of tickets are excluded from the training data?"
+  },
+  {
+    "id": "S017",
+    "category": "shared",
+    "shared_group": "Shared Group 2",
+    "group_prefix": "prefix B",
+    "template": "structured QA",
+    "prompt_index_within_group": 7,
+    "prompt": "You are a structured question-answering assistant. Read the context and answer the question using only the provided information. Format the response exactly as:\nAnswer: <direct answer>\nEvidence: <2-4 concise bullet-style facts in one paragraph>\nConfidence: <High/Medium/Low>\n\nContext:\nA policy note states that customer analytics data may be retained for 18 months by default. For enterprise accounts with signed compliance addenda, retention is reduced to 12 months.\n\nQuestion:\nWhat is the default retention period, and when is it shorter?"
+  },
+  {
+    "id": "S018",
+    "category": "shared",
+    "shared_group": "Shared Group 2",
+    "group_prefix": "prefix B",
+    "template": "structured QA",
+    "prompt_index_within_group": 8,
+    "prompt": "You are a structured question-answering assistant. Read the context and answer the question using only the provided information. Format the response exactly as:\nAnswer: <direct answer>\nEvidence: <2-4 concise bullet-style facts in one paragraph>\nConfidence: <High/Medium/Low>\n\nContext:\nThe model serving guide says batch size 32 maximizes throughput on the test GPU, but batch size 16 yields lower tail latency under bursty traffic. The team expects highly variable traffic during launch week.\n\nQuestion:\nWhich batch size is more appropriate for launch week, based on the guide?"
+  },
+  {
+    "id": "S019",
+    "category": "shared",
+    "shared_group": "Shared Group 2",
+    "group_prefix": "prefix B",
+    "template": "structured QA",
+    "prompt_index_within_group": 9,
+    "prompt": "You are a structured question-answering assistant. Read the context and answer the question using only the provided information. Format the response exactly as:\nAnswer: <direct answer>\nEvidence: <2-4 concise bullet-style facts in one paragraph>\nConfidence: <High/Medium/Low>\n\nContext:\nA project status update says the frontend is code complete, the backend still lacks audit logging, and end-to-end tests remain blocked on staging credentials. Security review cannot start until audit logging is implemented.\n\nQuestion:\nWhy can't the security review start yet?"
+  },
+  {
+    "id": "S020",
+    "category": "shared",
+    "shared_group": "Shared Group 2",
+    "group_prefix": "prefix B",
+    "template": "structured QA",
+    "prompt_index_within_group": 10,
+    "prompt": "You are a structured question-answering assistant. Read the context and answer the question using only the provided information. Format the response exactly as:\nAnswer: <direct answer>\nEvidence: <2-4 concise bullet-style facts in one paragraph>\nConfidence: <High/Medium/Low>\n\nContext:\nThe meeting notes say the team considered PostgreSQL and MongoDB for event storage. PostgreSQL was chosen because the workload needs strong transactional guarantees and complex relational queries.\n\nQuestion:\nWhy was PostgreSQL chosen over MongoDB?"
+  },
+  {
+    "id": "S021",
+    "category": "shared",
+    "shared_group": "Shared Group 3",
+    "group_prefix": "prefix C",
+    "template": "code review summary",
+    "prompt_index_within_group": 1,
+    "prompt": "You are a code review summarization assistant. Review the change description below and write a brief summary for a pull request discussion. Include these headings: What Changed, Strengths, Risks, Recommended Follow-ups.\n\nChange Description:\nThe pull request replaces a handwritten SQL string builder with parameterized queries in the user search endpoint. It also adds input validation for page size and sort direction, plus unit tests for malformed inputs and SQL injection attempts."
+  },
+  {
+    "id": "S022",
+    "category": "shared",
+    "shared_group": "Shared Group 3",
+    "group_prefix": "prefix C",
+    "template": "code review summary",
+    "prompt_index_within_group": 2,
+    "prompt": "You are a code review summarization assistant. Review the change description below and write a brief summary for a pull request discussion. Include these headings: What Changed, Strengths, Risks, Recommended Follow-ups.\n\nChange Description:\nThis change refactors a Flask upload handler to stream files directly to object storage instead of buffering them fully in memory. It updates error handling for partial upload failures and adds a cleanup path for abandoned temporary records."
+  },
+  {
+    "id": "S023",
+    "category": "shared",
+    "shared_group": "Shared Group 3",
+    "group_prefix": "prefix C",
+    "template": "code review summary",
+    "prompt_index_within_group": 3,
+    "prompt": "You are a code review summarization assistant. Review the change description below and write a brief summary for a pull request discussion. Include these headings: What Changed, Strengths, Risks, Recommended Follow-ups.\n\nChange Description:\nThe patch introduces a Redis cache in front of a feature flag service. It defines a 30-second TTL, caches misses, and adds metrics for hit rate and stale reads. It does not yet include cache warm-up on deploy."
+  },
+  {
+    "id": "S024",
+    "category": "shared",
+    "shared_group": "Shared Group 3",
+    "group_prefix": "prefix C",
+    "template": "code review summary",
+    "prompt_index_within_group": 4,
+    "prompt": "You are a code review summarization assistant. Review the change description below and write a brief summary for a pull request discussion. Include these headings: What Changed, Strengths, Risks, Recommended Follow-ups.\n\nChange Description:\nThe PR migrates a React dashboard from local component state to a centralized reducer. It consolidates filter logic, removes duplicated transformation code, and adds tests for pagination and sort interactions."
+  },
+  {
+    "id": "S025",
+    "category": "shared",
+    "shared_group": "Shared Group 3",
+    "group_prefix": "prefix C",
+    "template": "code review summary",
+    "prompt_index_within_group": 5,
+    "prompt": "You are a code review summarization assistant. Review the change description below and write a brief summary for a pull request discussion. Include these headings: What Changed, Strengths, Risks, Recommended Follow-ups.\n\nChange Description:\nThis update adds retry logic to an outbound payment webhook sender. Retries use exponential backoff with a maximum of five attempts, but the first version does not include jitter or idempotency-key validation on retries."
+  },
+  {
+    "id": "S026",
+    "category": "shared",
+    "shared_group": "Shared Group 3",
+    "group_prefix": "prefix C",
+    "template": "code review summary",
+    "prompt_index_within_group": 6,
+    "prompt": "You are a code review summarization assistant. Review the change description below and write a brief summary for a pull request discussion. Include these headings: What Changed, Strengths, Risks, Recommended Follow-ups.\n\nChange Description:\nThe change replaces a synchronous image-processing step with an asynchronous job queue. API responses now return a job ID immediately, and a new status endpoint is added for polling job completion."
+  },
+  {
+    "id": "S027",
+    "category": "shared",
+    "shared_group": "Shared Group 3",
+    "group_prefix": "prefix C",
+    "template": "code review summary",
+    "prompt_index_within_group": 7,
+    "prompt": "You are a code review summarization assistant. Review the change description below and write a brief summary for a pull request discussion. Include these headings: What Changed, Strengths, Risks, Recommended Follow-ups.\n\nChange Description:\nThe patch upgrades a Java service from using raw threads to a bounded executor pool. It also adds timeout handling for downstream calls and captures slow-request metrics for observability."
+  },
+  {
+    "id": "S028",
+    "category": "shared",
+    "shared_group": "Shared Group 3",
+    "group_prefix": "prefix C",
+    "template": "code review summary",
+    "prompt_index_within_group": 8,
+    "prompt": "You are a code review summarization assistant. Review the change description below and write a brief summary for a pull request discussion. Include these headings: What Changed, Strengths, Risks, Recommended Follow-ups.\n\nChange Description:\nThe PR modifies a tokenizer preprocessing function so it normalizes Unicode punctuation and collapses repeated whitespace. Benchmark notes show a small preprocessing overhead but more consistent downstream token counts."
+  },
+  {
+    "id": "S029",
+    "category": "shared",
+    "shared_group": "Shared Group 3",
+    "group_prefix": "prefix C",
+    "template": "code review summary",
+    "prompt_index_within_group": 9,
+    "prompt": "You are a code review summarization assistant. Review the change description below and write a brief summary for a pull request discussion. Include these headings: What Changed, Strengths, Risks, Recommended Follow-ups.\n\nChange Description:\nThis update introduces role-based access checks to an admin endpoint. It verifies org membership and role level, but audit logging for denied requests is not yet implemented."
+  },
+  {
+    "id": "S030",
+    "category": "shared",
+    "shared_group": "Shared Group 3",
+    "group_prefix": "prefix C",
+    "template": "code review summary",
+    "prompt_index_within_group": 10,
+    "prompt": "You are a code review summarization assistant. Review the change description below and write a brief summary for a pull request discussion. Include these headings: What Changed, Strengths, Risks, Recommended Follow-ups.\n\nChange Description:\nThe patch simplifies a C++ parser by replacing manual memory management with smart pointers and scoped ownership. It removes several delete paths and adds regression tests for malformed nested input."
+  },
+  {
+    "id": "S031",
+    "category": "shared",
+    "shared_group": "Shared Group 4",
+    "group_prefix": "prefix D",
+    "template": "RAG answer formatting",
+    "prompt_index_within_group": 1,
+    "prompt": "You are a retrieval-augmented generation response formatter. Use the notes below to draft an end-user answer grounded in the retrieved evidence. Format with the sections: Final Answer, Supporting Evidence, Caveats. Do not invent facts outside the notes.\n\nRetrieved Notes:\nNote 1: The warranty portal says batteries are covered for 24 months from purchase date. Note 2: Cosmetic damage is excluded unless it affects device function. Note 3: Proof of purchase is required for all claims."
+  },
+  {
+    "id": "S032",
+    "category": "shared",
+    "shared_group": "Shared Group 4",
+    "group_prefix": "prefix D",
+    "template": "RAG answer formatting",
+    "prompt_index_within_group": 2,
+    "prompt": "You are a retrieval-augmented generation response formatter. Use the notes below to draft an end-user answer grounded in the retrieved evidence. Format with the sections: Final Answer, Supporting Evidence, Caveats. Do not invent facts outside the notes.\n\nRetrieved Notes:\nNote 1: The travel policy reimburses economy airfare for domestic trips under 6 hours. Note 2: Business class requires VP approval. Note 3: Receipts must be submitted within 30 days of trip completion."
+  },
+  {
+    "id": "S033",
+    "category": "shared",
+    "shared_group": "Shared Group 4",
+    "group_prefix": "prefix D",
+    "template": "RAG answer formatting",
+    "prompt_index_within_group": 3,
+    "prompt": "You are a retrieval-augmented generation response formatter. Use the notes below to draft an end-user answer grounded in the retrieved evidence. Format with the sections: Final Answer, Supporting Evidence, Caveats. Do not invent facts outside the notes.\n\nRetrieved Notes:\nNote 1: The developer docs state API keys can be rotated from the security settings page. Note 2: Old keys remain valid for up to 24 hours after rotation unless revoked immediately. Note 3: Key creation is limited to workspace admins."
+  },
+  {
+    "id": "S034",
+    "category": "shared",
+    "shared_group": "Shared Group 4",
+    "group_prefix": "prefix D",
+    "template": "RAG answer formatting",
+    "prompt_index_within_group": 4,
+    "prompt": "You are a retrieval-augmented generation response formatter. Use the notes below to draft an end-user answer grounded in the retrieved evidence. Format with the sections: Final Answer, Supporting Evidence, Caveats. Do not invent facts outside the notes.\n\nRetrieved Notes:\nNote 1: The subscription FAQ says plan downgrades take effect at the next billing cycle. Note 2: Upgrades apply immediately with prorated charges. Note 3: Annual plans are non-refundable after the first 14 days."
+  },
+  {
+    "id": "S035",
+    "category": "shared",
+    "shared_group": "Shared Group 4",
+    "group_prefix": "prefix D",
+    "template": "RAG answer formatting",
+    "prompt_index_within_group": 5,
+    "prompt": "You are a retrieval-augmented generation response formatter. Use the notes below to draft an end-user answer grounded in the retrieved evidence. Format with the sections: Final Answer, Supporting Evidence, Caveats. Do not invent facts outside the notes.\n\nRetrieved Notes:\nNote 1: The payroll guide says expense reimbursements are paid in the next regular payroll run after approval. Note 2: Payroll closes two business days before payout. Note 3: Missing banking details can delay payment."
+  },
+  {
+    "id": "S036",
+    "category": "shared",
+    "shared_group": "Shared Group 4",
+    "group_prefix": "prefix D",
+    "template": "RAG answer formatting",
+    "prompt_index_within_group": 6,
+    "prompt": "You are a retrieval-augmented generation response formatter. Use the notes below to draft an end-user answer grounded in the retrieved evidence. Format with the sections: Final Answer, Supporting Evidence, Caveats. Do not invent facts outside the notes.\n\nRetrieved Notes:\nNote 1: The security handbook requires multifactor authentication for all privileged accounts. Note 2: Backup codes may be used only for recovery, not routine login. Note 3: Shared administrator accounts are prohibited."
+  },
+  {
+    "id": "S037",
+    "category": "shared",
+    "shared_group": "Shared Group 4",
+    "group_prefix": "prefix D",
+    "template": "RAG answer formatting",
+    "prompt_index_within_group": 7,
+    "prompt": "You are a retrieval-augmented generation response formatter. Use the notes below to draft an end-user answer grounded in the retrieved evidence. Format with the sections: Final Answer, Supporting Evidence, Caveats. Do not invent facts outside the notes.\n\nRetrieved Notes:\nNote 1: The help center says deleted files are recoverable from trash for 30 days. Note 2: After 30 days, recovery is not guaranteed. Note 3: Workspace admins can restore items deleted by active users within the retention window."
+  },
+  {
+    "id": "S038",
+    "category": "shared",
+    "shared_group": "Shared Group 4",
+    "group_prefix": "prefix D",
+    "template": "RAG answer formatting",
+    "prompt_index_within_group": 8,
+    "prompt": "You are a retrieval-augmented generation response formatter. Use the notes below to draft an end-user answer grounded in the retrieved evidence. Format with the sections: Final Answer, Supporting Evidence, Caveats. Do not invent facts outside the notes.\n\nRetrieved Notes:\nNote 1: The integration guide says webhook signatures should be validated using the signing secret. Note 2: Timestamp tolerance defaults to five minutes. Note 3: Requests that fail signature checks should be rejected before parsing the payload."
+  },
+  {
+    "id": "S039",
+    "category": "shared",
+    "shared_group": "Shared Group 4",
+    "group_prefix": "prefix D",
+    "template": "RAG answer formatting",
+    "prompt_index_within_group": 9,
+    "prompt": "You are a retrieval-augmented generation response formatter. Use the notes below to draft an end-user answer grounded in the retrieved evidence. Format with the sections: Final Answer, Supporting Evidence, Caveats. Do not invent facts outside the notes.\n\nRetrieved Notes:\nNote 1: The HR policy says employees may carry over up to 5 unused vacation days. Note 2: Additional unused days expire at year end unless local law requires otherwise. Note 3: Managers can view balances but cannot edit accrual rules."
+  },
+  {
+    "id": "S040",
+    "category": "shared",
+    "shared_group": "Shared Group 4",
+    "group_prefix": "prefix D",
+    "template": "RAG answer formatting",
+    "prompt_index_within_group": 10,
+    "prompt": "You are a retrieval-augmented generation response formatter. Use the notes below to draft an end-user answer grounded in the retrieved evidence. Format with the sections: Final Answer, Supporting Evidence, Caveats. Do not invent facts outside the notes.\n\nRetrieved Notes:\nNote 1: The analytics docs say daily dashboards refresh at 6:00 AM UTC. Note 2: Backfilled events may appear in historical charts within 24 hours. Note 3: Exported CSV files reflect the data available at export time."
+  },
+  {
+    "id": "S041",
+    "category": "shared",
+    "shared_group": "Shared Group 5",
+    "group_prefix": "prefix E",
+    "template": "bug triage summary",
+    "prompt_index_within_group": 1,
+    "prompt": "You are a bug triage assistant. Read the issue report and produce a concise triage summary with these headings: Issue, Suspected Cause, Severity, Immediate Next Steps.\n\nIssue Report:\nUsers report that the checkout page freezes after selecting express shipping on Safari 17. The browser console shows a null reference in the shipping-rate callback. The bug started after last Thursday's frontend release and affects about 8% of sessions."
+  },
+  {
+    "id": "S042",
+    "category": "shared",
+    "shared_group": "Shared Group 5",
+    "group_prefix": "prefix E",
+    "template": "bug triage summary",
+    "prompt_index_within_group": 2,
+    "prompt": "You are a bug triage assistant. Read the issue report and produce a concise triage summary with these headings: Issue, Suspected Cause, Severity, Immediate Next Steps.\n\nIssue Report:\nSeveral customers say password reset emails are not arriving for corporate domains. Delivery logs show a spike in 550 rejections after a mail provider configuration change deployed yesterday."
+  },
+  {
+    "id": "S043",
+    "category": "shared",
+    "shared_group": "Shared Group 5",
+    "group_prefix": "prefix E",
+    "template": "bug triage summary",
+    "prompt_index_within_group": 3,
+    "prompt": "You are a bug triage assistant. Read the issue report and produce a concise triage summary with these headings: Issue, Suspected Cause, Severity, Immediate Next Steps.\n\nIssue Report:\nA background worker processing image thumbnails is consuming 100% CPU and falling behind on queue depth. Metrics show the issue is concentrated on unusually large PNG uploads from a new partner integration."
+  },
+  {
+    "id": "S044",
+    "category": "shared",
+    "shared_group": "Shared Group 5",
+    "group_prefix": "prefix E",
+    "template": "bug triage summary",
+    "prompt_index_within_group": 4,
+    "prompt": "You are a bug triage assistant. Read the issue report and produce a concise triage summary with these headings: Issue, Suspected Cause, Severity, Immediate Next Steps.\n\nIssue Report:\nThe analytics dashboard shows duplicated revenue rows for some enterprise accounts. Investigation notes say the ETL job may be replaying already processed events when a retry happens near the hourly batch boundary."
+  },
+  {
+    "id": "S045",
+    "category": "shared",
+    "shared_group": "Shared Group 5",
+    "group_prefix": "prefix E",
+    "template": "bug triage summary",
+    "prompt_index_within_group": 5,
+    "prompt": "You are a bug triage assistant. Read the issue report and produce a concise triage summary with these headings: Issue, Suspected Cause, Severity, Immediate Next Steps.\n\nIssue Report:\nMobile users on Android 15 report that push notifications open the wrong conversation thread. The issue appears only when the app is resumed from a terminated state and deep-link metadata is partially missing."
+  },
+  {
+    "id": "S046",
+    "category": "shared",
+    "shared_group": "Shared Group 5",
+    "group_prefix": "prefix E",
+    "template": "bug triage summary",
+    "prompt_index_within_group": 6,
+    "prompt": "You are a bug triage assistant. Read the issue report and produce a concise triage summary with these headings: Issue, Suspected Cause, Severity, Immediate Next Steps.\n\nIssue Report:\nThe search endpoint returns intermittent 503 errors under heavy traffic. Autoscaling events occur, but new instances fail readiness checks because a dependency migration step sometimes exceeds the startup timeout."
+  },
+  {
+    "id": "S047",
+    "category": "shared",
+    "shared_group": "Shared Group 5",
+    "group_prefix": "prefix E",
+    "template": "bug triage summary",
+    "prompt_index_within_group": 7,
+    "prompt": "You are a bug triage assistant. Read the issue report and produce a concise triage summary with these headings: Issue, Suspected Cause, Severity, Immediate Next Steps.\n\nIssue Report:\nAn internal admin page exposes stale permission data for up to ten minutes after role changes. The page reads from a cache with delayed invalidation, while the source of truth updates immediately."
+  },
+  {
+    "id": "S048",
+    "category": "shared",
+    "shared_group": "Shared Group 5",
+    "group_prefix": "prefix E",
+    "template": "bug triage summary",
+    "prompt_index_within_group": 8,
+    "prompt": "You are a bug triage assistant. Read the issue report and produce a concise triage summary with these headings: Issue, Suspected Cause, Severity, Immediate Next Steps.\n\nIssue Report:\nA CSV import feature rejects files that contain quoted commas in address fields. The current parser uses naive string splitting instead of a standards-compliant CSV reader."
+  },
+  {
+    "id": "S049",
+    "category": "shared",
+    "shared_group": "Shared Group 5",
+    "group_prefix": "prefix E",
+    "template": "bug triage summary",
+    "prompt_index_within_group": 9,
+    "prompt": "You are a bug triage assistant. Read the issue report and produce a concise triage summary with these headings: Issue, Suspected Cause, Severity, Immediate Next Steps.\n\nIssue Report:\nAfter the latest release, some users cannot save profile changes when their display name includes emoji. Error logs indicate the downstream service rejects characters outside an outdated encoding assumption."
+  },
+  {
+    "id": "S050",
+    "category": "shared",
+    "shared_group": "Shared Group 5",
+    "group_prefix": "prefix E",
+    "template": "bug triage summary",
+    "prompt_index_within_group": 10,
+    "prompt": "You are a bug triage assistant. Read the issue report and produce a concise triage summary with these headings: Issue, Suspected Cause, Severity, Immediate Next Steps.\n\nIssue Report:\nA nightly training job fails at random epochs with out-of-memory errors. The failures correlate with longer-than-average sequences in shuffled batches and recent increases in max input length."
+  },
+  {
+    "id": "U001",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 1,
+    "prompt": "Write a memo to a product manager explaining why a feature with low daily usage might still be strategically important, and include three measurable signals to monitor before deciding whether to remove it."
+  },
+  {
+    "id": "U002",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 2,
+    "prompt": "Compare breadth-first search and depth-first search for navigating an unknown maze in a game engine, and explain when one would be preferred over the other under memory constraints."
+  },
+  {
+    "id": "U003",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 3,
+    "prompt": "Given a list of customer complaints about slow page loads, propose a short investigation plan that separates frontend causes, backend causes, and third-party dependency causes."
+  },
+  {
+    "id": "U004",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 4,
+    "prompt": "Draft a response to an executive who asks why a machine learning model with slightly lower accuracy was chosen for production over a more accurate alternative."
+  },
+  {
+    "id": "U005",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 5,
+    "prompt": "Read a fictional dataset description for a student attendance prediction task and identify two likely sources of label leakage and two reasonable mitigation steps."
+  },
+  {
+    "id": "U006",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 6,
+    "prompt": "Explain how you would estimate the cloud cost impact of increasing an API timeout from 5 seconds to 20 seconds during peak traffic."
+  },
+  {
+    "id": "U007",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 7,
+    "prompt": "Take the role of a teaching assistant and give feedback on a student's explanation of hash tables, focusing on collisions, resizing, and expected time complexity."
+  },
+  {
+    "id": "U008",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 8,
+    "prompt": "Produce a migration checklist for moving a small web application from local file storage to object storage while minimizing downtime and rollback risk."
+  },
+  {
+    "id": "U009",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 9,
+    "prompt": "Analyze a scenario where a recommendation system overexposes already popular items, and suggest algorithmic and product-level interventions to improve catalog diversity."
+  },
+  {
+    "id": "U010",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 10,
+    "prompt": "Summarize the main tradeoffs between monolithic and microservice architectures for a startup with a small engineering team and a rapidly changing product scope."
+  },
+  {
+    "id": "U011",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 11,
+    "prompt": "Create a careful plan for evaluating whether weekly active users dropped because of a real behavior change or because of analytics instrumentation drift."
+  },
+  {
+    "id": "U012",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 12,
+    "prompt": "A team wants to fine-tune a small language model for legal document classification. Outline the data governance questions they should answer before training begins."
+  },
+  {
+    "id": "U013",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 13,
+    "prompt": "Describe how you would debug a situation where unit tests pass locally but fail consistently in continuous integration after dependency upgrades."
+  },
+  {
+    "id": "U014",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 14,
+    "prompt": "Explain to a non-technical stakeholder why eventual consistency can cause confusing user experiences even when the system is working as designed."
+  },
+  {
+    "id": "U015",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 15,
+    "prompt": "Generate an interview-style answer describing a time when queue backlog rose unexpectedly, and explain how rate limiting and worker concurrency were tuned in response."
+  },
+  {
+    "id": "U016",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 16,
+    "prompt": "Design a prompt that asks an assistant to turn messy meeting notes into clear action items with owners, deadlines, blockers, and unresolved questions."
+  },
+  {
+    "id": "U017",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 17,
+    "prompt": "Provide a compact tutorial on how ROC-AUC differs from accuracy, and mention one example where ROC-AUC is the better metric for model comparison."
+  },
+  {
+    "id": "U018",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 18,
+    "prompt": "Investigate a hypothetical bug where search relevance drops only for multilingual queries, and list the first five artifacts or logs you would inspect."
+  },
+  {
+    "id": "U019",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 19,
+    "prompt": "Write a troubleshooting guide for a Dockerized app that starts successfully on a laptop but crashes immediately after deployment to Kubernetes."
+  },
+  {
+    "id": "U020",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 20,
+    "prompt": "Explain what makes benchmark results misleading when hardware, sequence length, batch size, and warm-up conditions are not controlled consistently."
+  },
+  {
+    "id": "U021",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 21,
+    "prompt": "Turn a rough idea for a student app that matches classmates for study sessions into a short product requirements draft with scope, constraints, and success metrics."
+  },
+  {
+    "id": "U022",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 22,
+    "prompt": "Propose an ablation study for testing whether a retrieval system benefits more from better chunking, better embeddings, or better reranking."
+  },
+  {
+    "id": "U023",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 23,
+    "prompt": "Describe how a data engineer should reason about idempotency when building a nightly pipeline that may retry after partial failures."
+  },
+  {
+    "id": "U024",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 24,
+    "prompt": "Give a concise architecture note for adding audit logs to a web service that already has authentication but no record of sensitive actions."
+  },
+  {
+    "id": "U025",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 25,
+    "prompt": "Evaluate the risks of relying on synthetic data to test a fraud-detection pipeline before enough real labeled data has been collected."
+  },
+  {
+    "id": "U026",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 26,
+    "prompt": "Write a grader comment for a programming assignment where the solution works on typical inputs but fails on edge cases involving empty arrays and duplicates."
+  },
+  {
+    "id": "U027",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 27,
+    "prompt": "Explain how to choose between horizontal scaling and vertical scaling for a stateful database under rising read traffic and moderate write traffic."
+  },
+  {
+    "id": "U028",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 28,
+    "prompt": "Draft a short policy recommendation for handling inactive user accounts in a SaaS product, balancing security, user convenience, and legal retention needs."
+  },
+  {
+    "id": "U029",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 29,
+    "prompt": "Outline a clean experiment to measure whether prompt formatting alone changes answer quality for a retrieval-augmented assistant."
+  },
+  {
+    "id": "U030",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 30,
+    "prompt": "Describe the key failure modes of caching negative lookups and give one example where this optimization can accidentally hide new data."
+  },
+  {
+    "id": "U031",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 31,
+    "prompt": "A startup wants to launch in a region with poor network connectivity. Suggest practical product and systems changes that would improve resilience."
+  },
+  {
+    "id": "U032",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 32,
+    "prompt": "Write a reviewer-style critique of a paper claim that a new optimizer is better because it reaches the same loss in fewer steps, without discussing wall-clock time."
+  },
+  {
+    "id": "U033",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 33,
+    "prompt": "Explain why blindly increasing beam width in sequence generation can fail to improve final output quality and may even make it worse."
+  },
+  {
+    "id": "U034",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 34,
+    "prompt": "Produce a short incident summary for a case where a feature flag was enabled for the wrong tenant and caused billing-side effects."
+  },
+  {
+    "id": "U035",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 35,
+    "prompt": "Design a set of instructions for annotators labeling whether support tickets are urgent, ambiguous, or routine, and mention likely disagreement sources."
+  },
+  {
+    "id": "U036",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 36,
+    "prompt": "Describe how to verify that a newly introduced database index actually helps the target query pattern rather than just shifting cost elsewhere."
+  },
+  {
+    "id": "U037",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 37,
+    "prompt": "Create a plan for comparing REST and GraphQL in a developer platform team that cares about schema governance, client flexibility, and operational simplicity."
+  },
+  {
+    "id": "U038",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 38,
+    "prompt": "Explain the engineering rationale for separating online inference features from offline training features even when they appear to contain the same information."
+  },
+  {
+    "id": "U039",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 39,
+    "prompt": "Prepare a small checklist for reviewing a pull request that introduces concurrency to a previously single-threaded service."
+  },
+  {
+    "id": "U040",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 40,
+    "prompt": "Write a structured answer to the question: how can a team tell whether an increase in model latency comes from tokenization, prefill, decode, or post-processing?"
+  },
+  {
+    "id": "U041",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 41,
+    "prompt": "Summarize the practical considerations for using nightly retraining in a forecasting system whose labels arrive with a several-day delay."
+  },
+  {
+    "id": "U042",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 42,
+    "prompt": "Draft a sample benchmark methodology section for comparing two vector search libraries on recall, memory, build time, and tail latency."
+  },
+  {
+    "id": "U043",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 43,
+    "prompt": "Explain how a bug in timezone normalization could silently corrupt analytics results without causing visible application errors."
+  },
+  {
+    "id": "U044",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 44,
+    "prompt": "Give a plain-English explanation of rate limiting strategies, including fixed window, sliding window, and token bucket, with one operational caveat each."
+  },
+  {
+    "id": "U045",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 45,
+    "prompt": "Propose a lightweight evaluation rubric for generated summaries that balances factual accuracy, coverage, clarity, and actionability."
+  },
+  {
+    "id": "U046",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 46,
+    "prompt": "Imagine a codebase with duplicated business rules in the API layer and the frontend. Describe the long-term risks and a reasonable consolidation strategy."
+  },
+  {
+    "id": "U047",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 47,
+    "prompt": "Write an implementation note for adding soft deletes to a system that currently hard-deletes rows, including downstream reporting implications."
+  },
+  {
+    "id": "U048",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 48,
+    "prompt": "Explain why changing tokenizer vocabulary can invalidate old cached features in a machine learning pipeline, even if the model architecture stays the same."
+  },
+  {
+    "id": "U049",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 49,
+    "prompt": "Create a concise root-cause analysis template that an on-call engineer can use immediately after stabilizing an incident."
+  },
+  {
+    "id": "U050",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 50,
+    "prompt": "Describe how to test whether a prefix-aware scheduler improves throughput fairly across both repeated-prompt workloads and highly diverse workloads."
+  },
+  {
+    "id": "U051",
+    "category": "unique",
+    "shared_group": null,
+    "group_prefix": null,
+    "template": "unique",
+    "prompt_index_within_group": 51,
+    "prompt": "Draft an engineering manager update that justifies postponing a feature launch because observability, rollback, and runbook coverage are incomplete."
+  }
+]

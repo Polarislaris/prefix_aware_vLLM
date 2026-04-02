@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local secrets / credentials
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.crt
+*.cer
+*.jks
+
+# Runtime logs and process files (may contain API key in startup args)
+logs/*.log
+logs/*.pid
+logs/vllm.pid

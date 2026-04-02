@@ -1,0 +1,3 @@
+window_ms,count,schedule_wait_ms_mean,model_latency_s_mean,total_latency_s_mean
+50,400,25.25,3.7600519775,3.7853019775
+100,400,52.0,3.7415773024999996,3.7935773024999997

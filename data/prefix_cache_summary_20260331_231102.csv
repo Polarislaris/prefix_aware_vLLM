@@ -1,0 +1,7 @@
+group,count,latency_mean_s,latency_p50_s,latency_p90_s,latency_min_s,latency_max_s,throughput_tokens_per_s_mean
+shared_prefix,50,3.364615,3.747322,3.931293,1.211140,4.206038,34.119209
+unique_prefix,50,3.754029,3.800695,3.944167,3.309958,4.135906,34.209570
+
+metric,value
+latency_mean_speedup_x,1.115738
+latency_p50_speedup_x,1.014243

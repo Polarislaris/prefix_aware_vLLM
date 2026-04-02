@@ -1,0 +1,6 @@
+scenario,route,grouping,window_ms,count,latency_mean_s,latency_p50_s,latency_p90_s,latency_min_s,latency_max_s,throughput_tokens_per_s_mean,prefix_reuse_ratio,shared_prefix_tokens,total_prefix_tokens,estimated_saved_compute_ms,effective_latency_gain_per_prefix_token_s
+fifo_w0,route1,fifo,0,100,3.858622,4.068092,4.141353,0.347453,4.385256,32.555842,0.000000,0,2099,0.000000,0.00000000
+exact_w0,route1,exact,0,100,3.786850,3.865670,4.090034,0.337247,4.295470,33.127150,0.357789,751,2099,22.530000,0.00341939
+similarity_w0,route1,similarity,0,100,3.758768,3.870676,4.082557,0.348410,4.194740,33.383549,0.388757,816,2099,24.480000,0.00475725
+similarity_window_50ms,route2,similarity,50,100,3.893302,4.014326,4.146564,0.378558,4.236852,32.142943,0.388757,816,2099,24.480000,-0.00165219
+similarity_window_100ms,route2,similarity,100,100,3.889813,3.986495,4.174660,0.350045,4.460624,32.229665,0.388757,816,2099,24.480000,-0.00148596

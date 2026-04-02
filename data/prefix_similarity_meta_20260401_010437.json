@@ -1,0 +1,54 @@
+{
+  "config": {
+    "base_url": "http://127.0.0.1:8000/v1",
+    "api_key": "testkey",
+    "model": "Qwen/Qwen2.5-3B-Instruct",
+    "prompt_file": "/home/xy68/kvcache_lab/vllm_shared_prefix_10types_100.json",
+    "sample_size": 100,
+    "max_tokens": 128,
+    "temperature": 0.0,
+    "warmup": 1,
+    "exact_prefix_chars": 120,
+    "sim_prefix_tokens": 24,
+    "sim_threshold_bits": 8,
+    "window_ms_list": "50,100",
+    "route2_grouping": "similarity",
+    "arrival_gap_ms": 5,
+    "cost_per_token_ms": 0.03,
+    "output_dir": "/home/xy68/kvcache_lab/data",
+    "dry_run": false
+  },
+  "input_count": 100,
+  "scenarios": [
+    {
+      "name": "fifo_w0",
+      "route": "route1",
+      "grouping": "fifo",
+      "window_ms": 0
+    },
+    {
+      "name": "exact_w0",
+      "route": "route1",
+      "grouping": "exact",
+      "window_ms": 0
+    },
+    {
+      "name": "similarity_w0",
+      "route": "route1",
+      "grouping": "similarity",
+      "window_ms": 0
+    },
+    {
+      "name": "similarity_window_50ms",
+      "route": "route2",
+      "grouping": "similarity",
+      "window_ms": 50
+    },
+    {
+      "name": "similarity_window_100ms",
+      "route": "route2",
+      "grouping": "similarity",
+      "window_ms": 100
+    }
+  ]
+}

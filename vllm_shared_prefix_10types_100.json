@@ -1,0 +1,602 @@
+[
+  {
+    "id": 56,
+    "type": "shared",
+    "prefix_type": "F",
+    "prompt": "You are a data analyst. Provide insights based on the following dataset description: Recent advances in transformer models and scaling laws."
+  },
+  {
+    "id": 42,
+    "type": "shared",
+    "prefix_type": "E",
+    "prompt": "You are a bug triage expert. Analyze and summarize the following bug report: Design a distributed cache system."
+  },
+  {
+    "id": 92,
+    "type": "shared",
+    "prefix_type": "J",
+    "prompt": "You are a product manager. Summarize key requirements and user needs from the following description: A Python function implementing quicksort with recursion."
+  },
+  {
+    "id": 15,
+    "type": "shared",
+    "prefix_type": "B",
+    "prompt": "You are an expert QA system. Answer the following question in a structured format: Concept of gradient descent in machine learning."
+  },
+  {
+    "id": 99,
+    "type": "shared",
+    "prefix_type": "J",
+    "prompt": "You are a product manager. Summarize key requirements and user needs from the following description: Dataset describing user engagement metrics over time."
+  },
+  {
+    "id": 84,
+    "type": "shared",
+    "prefix_type": "I",
+    "prompt": "You are a system designer. Outline a scalable solution for the following problem: A Python function implementing quicksort with recursion."
+  },
+  {
+    "id": 88,
+    "type": "shared",
+    "prefix_type": "I",
+    "prompt": "You are a system designer. Outline a scalable solution for the following problem: How does binary search work and what are its complexities?"
+  },
+  {
+    "id": 73,
+    "type": "shared",
+    "prefix_type": "H",
+    "prompt": "You are an AI tutor. Explain the following concept step by step: Bug report: application crashes when clicking submit."
+  },
+  {
+    "id": 9,
+    "type": "shared",
+    "prefix_type": "A",
+    "prompt": "You are a helpful assistant specialized in technical summarization. Summarize the following content: A paragraph explaining REST API design principles."
+  },
+  {
+    "id": 81,
+    "type": "shared",
+    "prefix_type": "I",
+    "prompt": "You are a system designer. Outline a scalable solution for the following problem: How does binary search work and what are its complexities?"
+  },
+  {
+    "id": 16,
+    "type": "shared",
+    "prefix_type": "B",
+    "prompt": "You are an expert QA system. Answer the following question in a structured format: Concept of gradient descent in machine learning."
+  },
+  {
+    "id": 26,
+    "type": "shared",
+    "prefix_type": "C",
+    "prompt": "You are a senior software engineer. Provide a concise code review summary for the following code: User story for an e-commerce checkout system."
+  },
+  {
+    "id": 18,
+    "type": "shared",
+    "prefix_type": "B",
+    "prompt": "You are an expert QA system. Answer the following question in a structured format: Dataset describing user engagement metrics over time."
+  },
+  {
+    "id": 12,
+    "type": "shared",
+    "prefix_type": "B",
+    "prompt": "You are an expert QA system. Answer the following question in a structured format: Dataset describing user engagement metrics over time."
+  },
+  {
+    "id": 68,
+    "type": "shared",
+    "prefix_type": "G",
+    "prompt": "You are a technical writer. Rewrite the following content to improve clarity and professionalism: Bug report: application crashes when clicking submit."
+  },
+  {
+    "id": 85,
+    "type": "shared",
+    "prefix_type": "I",
+    "prompt": "You are a system designer. Outline a scalable solution for the following problem: A Python function implementing quicksort with recursion."
+  },
+  {
+    "id": 46,
+    "type": "shared",
+    "prefix_type": "E",
+    "prompt": "You are a bug triage expert. Analyze and summarize the following bug report: User story for an e-commerce checkout system."
+  },
+  {
+    "id": 3,
+    "type": "shared",
+    "prefix_type": "A",
+    "prompt": "You are a helpful assistant specialized in technical summarization. Summarize the following content: Recent advances in transformer models and scaling laws."
+  },
+  {
+    "id": 27,
+    "type": "shared",
+    "prefix_type": "C",
+    "prompt": "You are a senior software engineer. Provide a concise code review summary for the following code: Concept of gradient descent in machine learning."
+  },
+  {
+    "id": 80,
+    "type": "shared",
+    "prefix_type": "H",
+    "prompt": "You are an AI tutor. Explain the following concept step by step: A Python function implementing quicksort with recursion."
+  },
+  {
+    "id": 50,
+    "type": "shared",
+    "prefix_type": "E",
+    "prompt": "You are a bug triage expert. Analyze and summarize the following bug report: How does binary search work and what are its complexities?"
+  },
+  {
+    "id": 74,
+    "type": "shared",
+    "prefix_type": "H",
+    "prompt": "You are an AI tutor. Explain the following concept step by step: How does binary search work and what are its complexities?"
+  },
+  {
+    "id": 57,
+    "type": "shared",
+    "prefix_type": "F",
+    "prompt": "You are a data analyst. Provide insights based on the following dataset description: Dataset describing user engagement metrics over time."
+  },
+  {
+    "id": 14,
+    "type": "shared",
+    "prefix_type": "B",
+    "prompt": "You are an expert QA system. Answer the following question in a structured format: Design a distributed cache system."
+  },
+  {
+    "id": 97,
+    "type": "shared",
+    "prefix_type": "J",
+    "prompt": "You are a product manager. Summarize key requirements and user needs from the following description: User story for an e-commerce checkout system."
+  },
+  {
+    "id": 98,
+    "type": "shared",
+    "prefix_type": "J",
+    "prompt": "You are a product manager. Summarize key requirements and user needs from the following description: A Python function implementing quicksort with recursion."
+  },
+  {
+    "id": 25,
+    "type": "shared",
+    "prefix_type": "C",
+    "prompt": "You are a senior software engineer. Provide a concise code review summary for the following code: Design a distributed cache system."
+  },
+  {
+    "id": 40,
+    "type": "shared",
+    "prefix_type": "D",
+    "prompt": "You are a retrieval-augmented assistant. Use the given context to answer the question clearly: Design a distributed cache system."
+  },
+  {
+    "id": 79,
+    "type": "shared",
+    "prefix_type": "H",
+    "prompt": "You are an AI tutor. Explain the following concept step by step: Design a distributed cache system."
+  },
+  {
+    "id": 23,
+    "type": "shared",
+    "prefix_type": "C",
+    "prompt": "You are a senior software engineer. Provide a concise code review summary for the following code: Recent advances in transformer models and scaling laws."
+  },
+  {
+    "id": 69,
+    "type": "shared",
+    "prefix_type": "G",
+    "prompt": "You are a technical writer. Rewrite the following content to improve clarity and professionalism: A paragraph explaining REST API design principles."
+  },
+  {
+    "id": 61,
+    "type": "shared",
+    "prefix_type": "G",
+    "prompt": "You are a technical writer. Rewrite the following content to improve clarity and professionalism: How does binary search work and what are its complexities?"
+  },
+  {
+    "id": 83,
+    "type": "shared",
+    "prefix_type": "I",
+    "prompt": "You are a system designer. Outline a scalable solution for the following problem: Concept of gradient descent in machine learning."
+  },
+  {
+    "id": 5,
+    "type": "shared",
+    "prefix_type": "A",
+    "prompt": "You are a helpful assistant specialized in technical summarization. Summarize the following content: Concept of gradient descent in machine learning."
+  },
+  {
+    "id": 49,
+    "type": "shared",
+    "prefix_type": "E",
+    "prompt": "You are a bug triage expert. Analyze and summarize the following bug report: User story for an e-commerce checkout system."
+  },
+  {
+    "id": 66,
+    "type": "shared",
+    "prefix_type": "G",
+    "prompt": "You are a technical writer. Rewrite the following content to improve clarity and professionalism: Recent advances in transformer models and scaling laws."
+  },
+  {
+    "id": 58,
+    "type": "shared",
+    "prefix_type": "F",
+    "prompt": "You are a data analyst. Provide insights based on the following dataset description: Dataset describing user engagement metrics over time."
+  },
+  {
+    "id": 94,
+    "type": "shared",
+    "prefix_type": "J",
+    "prompt": "You are a product manager. Summarize key requirements and user needs from the following description: A paragraph explaining REST API design principles."
+  },
+  {
+    "id": 38,
+    "type": "shared",
+    "prefix_type": "D",
+    "prompt": "You are a retrieval-augmented assistant. Use the given context to answer the question clearly: Context: Wikipedia article about climate change impacts."
+  },
+  {
+    "id": 55,
+    "type": "shared",
+    "prefix_type": "F",
+    "prompt": "You are a data analyst. Provide insights based on the following dataset description: Concept of gradient descent in machine learning."
+  },
+  {
+    "id": 11,
+    "type": "shared",
+    "prefix_type": "B",
+    "prompt": "You are an expert QA system. Answer the following question in a structured format: A Python function implementing quicksort with recursion."
+  },
+  {
+    "id": 54,
+    "type": "shared",
+    "prefix_type": "F",
+    "prompt": "You are a data analyst. Provide insights based on the following dataset description: Concept of gradient descent in machine learning."
+  },
+  {
+    "id": 19,
+    "type": "shared",
+    "prefix_type": "B",
+    "prompt": "You are an expert QA system. Answer the following question in a structured format: Bug report: application crashes when clicking submit."
+  },
+  {
+    "id": 59,
+    "type": "shared",
+    "prefix_type": "F",
+    "prompt": "You are a data analyst. Provide insights based on the following dataset description: Bug report: application crashes when clicking submit."
+  },
+  {
+    "id": 47,
+    "type": "shared",
+    "prefix_type": "E",
+    "prompt": "You are a bug triage expert. Analyze and summarize the following bug report: A Python function implementing quicksort with recursion."
+  },
+  {
+    "id": 87,
+    "type": "shared",
+    "prefix_type": "I",
+    "prompt": "You are a system designer. Outline a scalable solution for the following problem: Concept of gradient descent in machine learning."
+  },
+  {
+    "id": 71,
+    "type": "shared",
+    "prefix_type": "H",
+    "prompt": "You are an AI tutor. Explain the following concept step by step: User story for an e-commerce checkout system."
+  },
+  {
+    "id": 36,
+    "type": "shared",
+    "prefix_type": "D",
+    "prompt": "You are a retrieval-augmented assistant. Use the given context to answer the question clearly: Bug report: application crashes when clicking submit."
+  },
+  {
+    "id": 77,
+    "type": "shared",
+    "prefix_type": "H",
+    "prompt": "You are an AI tutor. Explain the following concept step by step: Recent advances in transformer models and scaling laws."
+  },
+  {
+    "id": 33,
+    "type": "shared",
+    "prefix_type": "D",
+    "prompt": "You are a retrieval-augmented assistant. Use the given context to answer the question clearly: Bug report: application crashes when clicking submit."
+  },
+  {
+    "id": 52,
+    "type": "shared",
+    "prefix_type": "F",
+    "prompt": "You are a data analyst. Provide insights based on the following dataset description: A paragraph explaining REST API design principles."
+  },
+  {
+    "id": 24,
+    "type": "shared",
+    "prefix_type": "C",
+    "prompt": "You are a senior software engineer. Provide a concise code review summary for the following code: A Python function implementing quicksort with recursion."
+  },
+  {
+    "id": 7,
+    "type": "shared",
+    "prefix_type": "A",
+    "prompt": "You are a helpful assistant specialized in technical summarization. Summarize the following content: Design a distributed cache system."
+  },
+  {
+    "id": 44,
+    "type": "shared",
+    "prefix_type": "E",
+    "prompt": "You are a bug triage expert. Analyze and summarize the following bug report: Context: Wikipedia article about climate change impacts."
+  },
+  {
+    "id": 35,
+    "type": "shared",
+    "prefix_type": "D",
+    "prompt": "You are a retrieval-augmented assistant. Use the given context to answer the question clearly: Concept of gradient descent in machine learning."
+  },
+  {
+    "id": 48,
+    "type": "shared",
+    "prefix_type": "E",
+    "prompt": "You are a bug triage expert. Analyze and summarize the following bug report: Concept of gradient descent in machine learning."
+  },
+  {
+    "id": 37,
+    "type": "shared",
+    "prefix_type": "D",
+    "prompt": "You are a retrieval-augmented assistant. Use the given context to answer the question clearly: How does binary search work and what are its complexities?"
+  },
+  {
+    "id": 22,
+    "type": "shared",
+    "prefix_type": "C",
+    "prompt": "You are a senior software engineer. Provide a concise code review summary for the following code: Context: Wikipedia article about climate change impacts."
+  },
+  {
+    "id": 1,
+    "type": "shared",
+    "prefix_type": "A",
+    "prompt": "You are a helpful assistant specialized in technical summarization. Summarize the following content: Design a distributed cache system."
+  },
+  {
+    "id": 17,
+    "type": "shared",
+    "prefix_type": "B",
+    "prompt": "You are an expert QA system. Answer the following question in a structured format: Dataset describing user engagement metrics over time."
+  },
+  {
+    "id": 39,
+    "type": "shared",
+    "prefix_type": "D",
+    "prompt": "You are a retrieval-augmented assistant. Use the given context to answer the question clearly: A Python function implementing quicksort with recursion."
+  },
+  {
+    "id": 63,
+    "type": "shared",
+    "prefix_type": "G",
+    "prompt": "You are a technical writer. Rewrite the following content to improve clarity and professionalism: Context: Wikipedia article about climate change impacts."
+  },
+  {
+    "id": 30,
+    "type": "shared",
+    "prefix_type": "C",
+    "prompt": "You are a senior software engineer. Provide a concise code review summary for the following code: Design a distributed cache system."
+  },
+  {
+    "id": 34,
+    "type": "shared",
+    "prefix_type": "D",
+    "prompt": "You are a retrieval-augmented assistant. Use the given context to answer the question clearly: Design a distributed cache system."
+  },
+  {
+    "id": 90,
+    "type": "shared",
+    "prefix_type": "I",
+    "prompt": "You are a system designer. Outline a scalable solution for the following problem: User story for an e-commerce checkout system."
+  },
+  {
+    "id": 60,
+    "type": "shared",
+    "prefix_type": "F",
+    "prompt": "You are a data analyst. Provide insights based on the following dataset description: Concept of gradient descent in machine learning."
+  },
+  {
+    "id": 6,
+    "type": "shared",
+    "prefix_type": "A",
+    "prompt": "You are a helpful assistant specialized in technical summarization. Summarize the following content: How does binary search work and what are its complexities?"
+  },
+  {
+    "id": 51,
+    "type": "shared",
+    "prefix_type": "F",
+    "prompt": "You are a data analyst. Provide insights based on the following dataset description: Dataset describing user engagement metrics over time."
+  },
+  {
+    "id": 100,
+    "type": "shared",
+    "prefix_type": "J",
+    "prompt": "You are a product manager. Summarize key requirements and user needs from the following description: Design a distributed cache system."
+  },
+  {
+    "id": 89,
+    "type": "shared",
+    "prefix_type": "I",
+    "prompt": "You are a system designer. Outline a scalable solution for the following problem: Dataset describing user engagement metrics over time."
+  },
+  {
+    "id": 31,
+    "type": "shared",
+    "prefix_type": "D",
+    "prompt": "You are a retrieval-augmented assistant. Use the given context to answer the question clearly: Context: Wikipedia article about climate change impacts."
+  },
+  {
+    "id": 70,
+    "type": "shared",
+    "prefix_type": "G",
+    "prompt": "You are a technical writer. Rewrite the following content to improve clarity and professionalism: A Python function implementing quicksort with recursion."
+  },
+  {
+    "id": 2,
+    "type": "shared",
+    "prefix_type": "A",
+    "prompt": "You are a helpful assistant specialized in technical summarization. Summarize the following content: Recent advances in transformer models and scaling laws."
+  },
+  {
+    "id": 4,
+    "type": "shared",
+    "prefix_type": "A",
+    "prompt": "You are a helpful assistant specialized in technical summarization. Summarize the following content: How does binary search work and what are its complexities?"
+  },
+  {
+    "id": 82,
+    "type": "shared",
+    "prefix_type": "I",
+    "prompt": "You are a system designer. Outline a scalable solution for the following problem: User story for an e-commerce checkout system."
+  },
+  {
+    "id": 8,
+    "type": "shared",
+    "prefix_type": "A",
+    "prompt": "You are a helpful assistant specialized in technical summarization. Summarize the following content: Concept of gradient descent in machine learning."
+  },
+  {
+    "id": 72,
+    "type": "shared",
+    "prefix_type": "H",
+    "prompt": "You are an AI tutor. Explain the following concept step by step: Bug report: application crashes when clicking submit."
+  },
+  {
+    "id": 93,
+    "type": "shared",
+    "prefix_type": "J",
+    "prompt": "You are a product manager. Summarize key requirements and user needs from the following description: Dataset describing user engagement metrics over time."
+  },
+  {
+    "id": 96,
+    "type": "shared",
+    "prefix_type": "J",
+    "prompt": "You are a product manager. Summarize key requirements and user needs from the following description: Design a distributed cache system."
+  },
+  {
+    "id": 75,
+    "type": "shared",
+    "prefix_type": "H",
+    "prompt": "You are an AI tutor. Explain the following concept step by step: User story for an e-commerce checkout system."
+  },
+  {
+    "id": 13,
+    "type": "shared",
+    "prefix_type": "B",
+    "prompt": "You are an expert QA system. Answer the following question in a structured format: Design a distributed cache system."
+  },
+  {
+    "id": 91,
+    "type": "shared",
+    "prefix_type": "J",
+    "prompt": "You are a product manager. Summarize key requirements and user needs from the following description: Context: Wikipedia article about climate change impacts."
+  },
+  {
+    "id": 41,
+    "type": "shared",
+    "prefix_type": "E",
+    "prompt": "You are a bug triage expert. Analyze and summarize the following bug report: Context: Wikipedia article about climate change impacts."
+  },
+  {
+    "id": 32,
+    "type": "shared",
+    "prefix_type": "D",
+    "prompt": "You are a retrieval-augmented assistant. Use the given context to answer the question clearly: User story for an e-commerce checkout system."
+  },
+  {
+    "id": 45,
+    "type": "shared",
+    "prefix_type": "E",
+    "prompt": "You are a bug triage expert. Analyze and summarize the following bug report: Recent advances in transformer models and scaling laws."
+  },
+  {
+    "id": 76,
+    "type": "shared",
+    "prefix_type": "H",
+    "prompt": "You are an AI tutor. Explain the following concept step by step: How does binary search work and what are its complexities?"
+  },
+  {
+    "id": 20,
+    "type": "shared",
+    "prefix_type": "B",
+    "prompt": "You are an expert QA system. Answer the following question in a structured format: A Python function implementing quicksort with recursion."
+  },
+  {
+    "id": 64,
+    "type": "shared",
+    "prefix_type": "G",
+    "prompt": "You are a technical writer. Rewrite the following content to improve clarity and professionalism: Concept of gradient descent in machine learning."
+  },
+  {
+    "id": 28,
+    "type": "shared",
+    "prefix_type": "C",
+    "prompt": "You are a senior software engineer. Provide a concise code review summary for the following code: User story for an e-commerce checkout system."
+  },
+  {
+    "id": 86,
+    "type": "shared",
+    "prefix_type": "I",
+    "prompt": "You are a system designer. Outline a scalable solution for the following problem: A paragraph explaining REST API design principles."
+  },
+  {
+    "id": 67,
+    "type": "shared",
+    "prefix_type": "G",
+    "prompt": "You are a technical writer. Rewrite the following content to improve clarity and professionalism: Recent advances in transformer models and scaling laws."
+  },
+  {
+    "id": 53,
+    "type": "shared",
+    "prefix_type": "F",
+    "prompt": "You are a data analyst. Provide insights based on the following dataset description: Concept of gradient descent in machine learning."
+  },
+  {
+    "id": 95,
+    "type": "shared",
+    "prefix_type": "J",
+    "prompt": "You are a product manager. Summarize key requirements and user needs from the following description: Dataset describing user engagement metrics over time."
+  },
+  {
+    "id": 43,
+    "type": "shared",
+    "prefix_type": "E",
+    "prompt": "You are a bug triage expert. Analyze and summarize the following bug report: Design a distributed cache system."
+  },
+  {
+    "id": 29,
+    "type": "shared",
+    "prefix_type": "C",
+    "prompt": "You are a senior software engineer. Provide a concise code review summary for the following code: A paragraph explaining REST API design principles."
+  },
+  {
+    "id": 78,
+    "type": "shared",
+    "prefix_type": "H",
+    "prompt": "You are an AI tutor. Explain the following concept step by step: A paragraph explaining REST API design principles."
+  },
+  {
+    "id": 21,
+    "type": "shared",
+    "prefix_type": "C",
+    "prompt": "You are a senior software engineer. Provide a concise code review summary for the following code: User story for an e-commerce checkout system."
+  },
+  {
+    "id": 62,
+    "type": "shared",
+    "prefix_type": "G",
+    "prompt": "You are a technical writer. Rewrite the following content to improve clarity and professionalism: Dataset describing user engagement metrics over time."
+  },
+  {
+    "id": 10,
+    "type": "shared",
+    "prefix_type": "A",
+    "prompt": "You are a helpful assistant specialized in technical summarization. Summarize the following content: Dataset describing user engagement metrics over time."
+  },
+  {
+    "id": 65,
+    "type": "shared",
+    "prefix_type": "G",
+    "prompt": "You are a technical writer. Rewrite the following content to improve clarity and professionalism: Concept of gradient descent in machine learning."
+  }
+]
