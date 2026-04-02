@@ -1,4 +1,4 @@
-# Prefix-Aware KV Cache 实验报告
+# Prefix-Aware KV Cache 
 
 ## 1. 实验方法说明
 
